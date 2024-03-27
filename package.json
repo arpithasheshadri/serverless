@@ -1,0 +1,19 @@
+{
+  "name": "serverless",
+  "version": "1.0.0",
+  "description": "cloud function",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/functions-framework": "^3.3.0",
+    "dotenv": "^16.4.5",
+    "mailgun": "^0.5.0",
+    "mailgun-js": "^0.22.0",
+    "pg": "^8.11.3",
+    "sequelize": "^6.37.1"
+  }
+}
