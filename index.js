@@ -41,7 +41,7 @@ async function sendVerificationEmail(username, token) {
     from: process.env.MAILGUN_FROM_EMAIL,
     to: username,
     subject: 'Verify your email address',
-    html: `<p>Click the following link to verify your email address: <a href="http://${dns}:${port}/verify?token=${token}">Verify Email</a></p>`,
+    html: `<p>Click the following link to verify your email address: <a href="https://${dns}/verify?token=${token}">Verify Email</a></p>`,
   };
 
   mg.messages().send(data, (error, body) => {
